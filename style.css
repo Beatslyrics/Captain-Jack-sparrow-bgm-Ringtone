@@ -11,4 +11,4 @@ table {
  		}
 
 
-.download-btn-ctm a{display: flex; align-items: center;padding: 10px 20px; border-radius: 5px;font-size: 18px;background: #008CBA;color: #fff!important;text-align: center;text-decoration: none;border-bottom: 2px solid rgba(0,0,0,0.1);}
+.download-btn-ctm {display: flex; align-items: center;padding: 10px 20px; border-radius: 5px;font-size: 18px;background: #008CBA;color: #fff!important;text-align: center;text-decoration: none;border-bottom: 2px solid rgba(0,0,0,0.1);}
