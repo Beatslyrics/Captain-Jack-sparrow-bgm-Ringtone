@@ -15,8 +15,20 @@
 <br/><br/><br/><br/>
 
 <div class="download-btn-ctm">
-  
-<a href="Jack Sparrow Bgm  BGM WORLD.mp3?dl=1" target="_blank" >Download to audio</a>
+
+<?php
+$mp3 ='Jack Sparrow Bgm  BGM WORLD.mp3';
+if(file_exists($mp3)) {
+  header('Content-Type: audio/mpeg');
+  header('Content-Disposition: attachment; filename="Jack Sparrow Bgm  BGM WORLD.mp3"');
+  header('Content-length: '. filesize($mp3));
+  header('Cache-Control: no-cache');
+  header('Content-Transfer-Encoding: chunked'); 
+  readfile($mp3);
+  exit;
+}
+?> 
+>Download to audio</a>
 </div>
     </body>
 </html>
